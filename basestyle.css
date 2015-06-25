@@ -1,0 +1,111 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	font: 100%/1.5 Arial, sans-serif;
+}
+
+//If you need to go for speed over quality
+// .foo {
+// 	text-rendering: optimizeSpeed;
+// }
+
+//In order for inputs and buttons to play along, you'll need to be more specific
+// -webkit-font-smoothing: none;
+// -webkit-font-smoothing: subpixel-antialiased;
+// -moz-osx-font-smoothing: grayscale;
+body, input, button {
+	-webkit-font-smoothing: antialiased;
+}
+
+//headings
+h1 { font-size: 2em;    /* 2*16 = 32 */       }
+h2 { font-size: 1.5em;  /* 1.5*16 = 24 */     }
+h3 { font-size: 1.17em; /* 1.17*16 = 18.72 */ }
+h4 { font-size: 1em;    /* 1*16 = 16 */       }
+h5 { font-size: 0.83em; /* 0.83*16 = 13.28 */ }
+h6 { font-size: 0.75em; /* 0.75*16 = 12 */    }
+
+//paragraph
+p {
+	font-size: 1em;
+	line-height: 1.5;
+	letter-spacing: 0.0625em;
+    margin: 0 0 1em;
+
+	//word break
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
+ 
+.indent p+p {
+	text-indent: 2em;
+    margin-top: -1em;
+}
+
+//anchors
+a, a:visited {
+	text-decoration: underline;
+}
+ 
+a:hover {
+	text-decoration: none;
+}
+
+a:active { color: tomato; }
+
+a:focus { border: 1px dotted tomato; }
+
+
+//others
+strong  { font-weight: bold; }
+em { font-style: italic; }
+
+code, pre {
+	font-family: monospace, serif;
+	font-size: 1em;
+}
+
+blockquote {
+	font-style: italic; 
+}
+ 
+blockquote:before { 
+	content: "\201C";
+	display: inline-block;
+	padding-right: .4em;
+}
+
+//column
+.column {
+	float: left;
+	padding: 0 1em;
+}
+
+.column-1   { width: 95px };
+.column-2   { width: 190px };
+.column-3   { width: 285px };
+.column-4   { width: 380px };
+.column-5   { width: 475px };
+.column-6   { width: 570px };
+.column-7   { width: 665px };
+.column-8   { width: 760px };
+.column-9   { width: 855px };
+.column-10  { width: 950px };
+.column-11  { width: 1045px };
+.column-12  { width: 1140px };
+
